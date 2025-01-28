@@ -1,0 +1,130 @@
+body {
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #7b0323;
+    overflow: hidden;
+}
+
+#mode-selection {
+	display: flex;
+	height: 500px;
+    text-align: center;
+    margin-top: 20px;
+	justify-content: center;
+}
+
+#score-container {
+	display: none;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#scoreboard div {
+    margin-right: 5px;
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
+    font-size: 1.2em;
+    color: AliceBlue;
+    display: flex;
+    align-items: center;
+}
+
+.score-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+button {
+    margin-top: 5px;
+    padding: 10px 30px;
+	max-height: 50px;
+
+    font-size: 1em;
+    background-color: #323232;
+    color: AliceBlue;
+    border: none;
+    cursor: pointer;
+    border-radius: 5p	x;
+}
+
+button:hover {
+    background-color: #646464;
+}
+
+#game-container {
+    display: none;
+    height: 500px;
+    text-align: center;
+    padding: 20px;
+    background-color: #646464;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#board {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cell img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.cell:hover {
+    background-color: #f3f3f3;
+}
+
+#message {
+    margin-top: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    visibility: hidden;
+    transition: visibility 0.3s ease;
+}
+
+#message.visible {
+    visibility: visible;      /* Make message visible when a player wins */
+}
+
+#footer{
+    	font-family: "Trebuchet MS", Tahoma, sans-serif;
+    	display: flex;
+    	margin: 0;
+	overflow: hidden;
+	color: AliceBlue;
+}
+
+.text-AB {
+	color: AliceBlue;
+}

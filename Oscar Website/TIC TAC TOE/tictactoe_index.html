@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="../imgs/favicon.png">
+	<title>Tic Tac Toe</title>
+ 	<link rel="stylesheet" href="tictactoe_styles.css">
+</head>
+
+<body>
+<!-- Mode Selection Section -->
+<div id="mode-selection">
+    <button id="player-vs-player-btn">Play Against Another Player</button>
+    <button id="player-vs-ai-btn">Play Against AI</button>
+</div>
+
+<!-- Score Section (Separate from the game board) -->
+<div id="score-container">
+	<div id="scoreboard">
+		<div id="x-score">
+			<img src="s_x_icon.png" alt="X" class="score-icon"> 
+			<span id="x-wins">0</span>&nbsp;Wins
+		</div>
+		<div id="o-score">
+			<img src="s_o_icon.png" alt="O" class="score-icon">
+			<span id="o-wins">0</span>&nbsp;Wins
+		</div>
+	</div>
+	<button id="reset-score-btn">Reset Score</button>
+</div>
+
+<!-- Game Section -->
+<div id="game-container">
+	<h1>TIC TAC TOE</h1>
+	<div id="board">
+		<div class="row">
+			<div class="cell" data-index="0"></div>
+			<div class="cell" data-index="1"></div>
+			<div class="cell" data-index="2"></div>
+		</div>
+		<div class="row">
+			<div class="cell" data-index="3"></div>
+			<div class="cell" data-index="4"></div>
+			<div class="cell" data-index="5"></div>
+		</div>
+		<div class="row">
+			<div class="cell" data-index="6"></div>
+			<div class="cell" data-index="7"></div>
+			<div class="cell" data-index="8"></div>
+		</div>
+	</div>
+<!-- Restart Button/Message Section -->
+	<button id="restart-btn">Restart Game</button>
+	<div id="message"></div>
+</div>
+<script src="tictactoe_script.js"></script>
+
+<footer class="bg-white">
+	<div class="flex bg-white text-AB container max-w-4xl mx-auto my-8 px-4 justify-center">Made by&nbsp;<a href="../homepage.html" alt="Link to personal website">Oscar Ruenes Campos</a>. Created using a modified version of the&nbsp;<a class="underline" target="_blank" href="https://github.com/adfaure/kodama-theme">Kodama</a>&nbsp;academic template.
+	</div>
+</footer>	
+</body>
+</html>
