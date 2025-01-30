@@ -1847,172 +1847,193 @@ w-60 {
 }
 
 @media (min-width: 1024px) {
-  .lg\:bg-blue-900 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(30 58 138 / var(--tw-bg-opacity));
-  }
+	.lg\:bg-blue-900 {
+		--tw-bg-opacity: 1;
+		background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+	}
 }
-.image:hover
-		{
-			-moz-transition: opacity .3s ease-in, -moz-transform .1s ease-in-out;			/* Controls the grow time*/
-			-webkit-transition: opacity .3s ease-in, -webkit-transform .1s ease-in-out;
-			-ms-transition: opacity .3s ease-in, -ms-transform .1s ease-in-out;
-			transition: opacity .3s ease-in, transform .1s ease-in-out;
-			-moz-transform: scale(1.02);						/* Controls the grow size*/
-			-webkit-transform: scale(1.02);
-			-ms-transform: scale(1.02);
-			transform: scale(1.02);
-			opacity: 0.9;
-	}
-.grow:hover
-	{
-		-moz-transition: -moz-transform 0.3s ease;			/* Controls the grow time*/
-		-webkit-transition: -webkit-transform 0.3s ease;
-		-ms-transition: -ms-transform 0.3s ease;
-		transition: transform 0.3s ease;
-		-moz-transform: scale(1.1);						/* Controls the grow size*/
-		-webkit-transform: scale(1.1);
-		-ms-transform: scale(1.1);
-		transform: scale(1.1);
-	}
+
+.image:hover{
+	-moz-transition: opacity .3s ease-in, -moz-transform .1s ease-in-out;
+	-webkit-transition: opacity .3s ease-in, -webkit-transform .1s ease-in-out;
+	-ms-transition: opacity .3s ease-in, -ms-transform .1s ease-in-out;
+	transition: opacity .3s ease-in, transform .1s ease-in-out;
+	-moz-transform: scale(1.02);
+	-webkit-transform: scale(1.02);
+	-ms-transform: scale(1.02);
+	transform: scale(1.02);
+	opacity: 0.9;
+}
+.grow:hover{
+	-moz-transition: -moz-transform 0.3s ease;
+	-webkit-transition: -webkit-transform 0.3s ease;
+	-ms-transition: -ms-transform 0.3s ease;
+	transition: transform 0.3s ease;
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
 
 ul.actions.fit {
-			width: calc(100% + 1em);
-		}
+	width: calc(100% + 1em);
+}
 
-			ul.actions.fit li {
-				-moz-flex-grow: 1;
-				-webkit-flex-grow: 1;
-				-ms-flex-grow: 1;
-				flex-grow: 1;
-				-moz-flex-shrink: 1;
-				-webkit-flex-shrink: 1;
-				-ms-flex-shrink: 1;
-				flex-shrink: 1;
-				width: 100%;
-			}
+ul.actions.fit li {
+	-moz-flex-grow: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-grow: 1;
+	flex-grow: 1;
+	-moz-flex-shrink: 1;
+	-webkit-flex-shrink: 1;
+	-ms-flex-shrink: 1;
+	flex-shrink: 1;
+	width: 100%;
+}
 
-				ul.actions.fit li > * {
-					width: 100%;
-				}
+ul.actions.fit li > * {
+	width: 100%;
+}
 
-			ul.actions.fit.stacked {
-				width: 100%;
-			}
+ul.actions.fit.stacked {
+	width: 100%;
+}
 
-		@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+	ul.actions:not(.fixed) {
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		margin-left: 0;
+		width: 100%;
+	}
+	ul.actions:not(.fixed) li {
+		-moz-flex-grow: 1;
+		-webkit-flex-grow: 1;
+		-ms-flex-grow: 1;
+		flex-grow: 1;
+		-moz-flex-shrink: 1;
+		-webkit-flex-shrink: 1;
+		-ms-flex-shrink: 1;
+		flex-shrink: 1;
+		padding: 1em 0 0 0;
+		text-align: center;
+		width: 100%;
+	}
+	ul.actions:not(.fixed) li > * {
+		width: 100%;
+	}
 
-			ul.actions:not(.fixed) {
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
-				flex-direction: column;
-				margin-left: 0;
-				width: 100% !important;
-			}
+	ul.actions:not(.fixed) li:first-child {
+		padding-top: 0;
+	}
 
-				ul.actions:not(.fixed) li {
-					-moz-flex-grow: 1;
-					-webkit-flex-grow: 1;
-					-ms-flex-grow: 1;
-					flex-grow: 1;
-					-moz-flex-shrink: 1;
-					-webkit-flex-shrink: 1;
-					-ms-flex-shrink: 1;
-					flex-shrink: 1;
-					padding: 1em 0 0 0;
-					text-align: center;
-					width: 100%;
-				}
+	ul.actions:not(.fixed) li input[type="submit"],
+	ul.actions:not(.fixed) li input[type="reset"],
+	ul.actions:not(.fixed) li input[type="button"],
+	ul.actions:not(.fixed) li button,
+	ul.actions:not(.fixed) li .button {
+		width: 100%;
+	}
 
-					ul.actions:not(.fixed) li > * {
-						width: 100%;
-					}
-
-					ul.actions:not(.fixed) li:first-child {
-						padding-top: 0;
-					}
-
-					ul.actions:not(.fixed) li input[type="submit"],
-					ul.actions:not(.fixed) li input[type="reset"],
-					ul.actions:not(.fixed) li input[type="button"],
-					ul.actions:not(.fixed) li button,
-					ul.actions:not(.fixed) li .button {
-						width: 100%;
-					}
-
-						ul.actions:not(.fixed) li input[type="submit"].icon:before,
-						ul.actions:not(.fixed) li input[type="reset"].icon:before,
-						ul.actions:not(.fixed) li input[type="button"].icon:before,
-						ul.actions:not(.fixed) li button.icon:before,
-						ul.actions:not(.fixed) li .button.icon:before {
-							margin-left: -0.5rem;
-						}
-
-		}
+	ul.actions:not(.fixed) li input[type="submit"].icon:before,
+	ul.actions:not(.fixed) li input[type="reset"].icon:before,
+	ul.actions:not(.fixed) li input[type="button"].icon:before,
+	ul.actions:not(.fixed) li button.icon:before,
+	ul.actions:not(.fixed) li .button.icon:before {
+		margin-left: -0.5rem;
+	}
+}
 
 ul.icons {
-		cursor: default;
-		list-style: none;
-		padding-left: 0;
-		text-align: center;
-		
-	}
+	cursor: default;
+	list-style: none;
+	padding-left: 0;
+	text-align: center;	
+}
 
-		ul.icons li {
-			display: inline-block;
-			padding: 0 0.65em 0 0;
-		}
+ul.icons li {
+	display: inline-block;
+	padding: 0 0.65em 0 0;
+}
 
-			ul.icons li:last-child {
-				padding-right: 0 !important;
-			}
-#projects .skills
-	{
-		display:inline-flex;
-		flex-wrap: wrap;
-		list-style: none;
-		justify-content: center;
-		flex-direction: column;
-		align-items: flex-end;  /* Align items to the right */
-    		width: 45%;  /* Set a fixed width to maintain consistency */
-  		margin-left: auto;  /* Push the skills section to the right */
-		margin-right: 0;  /* Ensure there's no margin on the right */
+ul.icons li:last-child {
+	padding-right: 0 !important;
+}
 
-	}
+#projects .skills{
+	display:inline-flex;
+	flex-wrap: wrap;
+	list-style: none;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center; 
+    	width: 28%;
+  	margin-left: auto; 
+	margin-right: 0px;
+}
 
 
-#projects .skills ul
-	{
-		display:inline-flex;
-		list-style: none;
-		justify-content: center;
-	}
-	#projects .skills h2
-		{
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-content: center;
-			width: 75%;
-			margin-bottom: -0.5em;
-			margin-top: 0em;
-	
-		}
+#projects .skills ul{
+	display:inline-flex;
+	list-style: none;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
 
-		#projects .skills ul li
-		{
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-		}
+#projects .skills h3{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	width: 90%;
+	margin-bottom: -0.5em;
+	margin-top: 0em;
+	padding-left: 1.5em;
+	font-weight: 700;
+	font-family: ui-sans-serif, system-ui, sans-serif, "Ap
+	font-size: 1.75rem;
+	line-height: 2rem;
+	font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 
-			#projects .skills ul li p
-			{
-				margin: 0 .5em 0 .5em;
-				vertical-align: middle;
-				display:block;
-				list-style: none;
-				justify-content: center;
-			}
+#projects .skills ul li{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#projects .skills ul li svg{
+	height:  48px;
+	width: 48px;
+}
+
+#projects .skills ul li p{
+	margin: 0 .5em 0 .5em;
+	vertical-align: middle;
+	display:block;
+	font-size: 15px;
+	list-style: none;
+	justify-content: center;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#projects .experience-skills {
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	width: 80%;
+	margin-left: 100px;
+	margin-right 100px;
+}
+
+#projects .experience-skills ul li svg{
+	height:  96px;
+	width: 96px;
+}
