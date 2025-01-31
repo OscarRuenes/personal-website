@@ -9,41 +9,35 @@
 	<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
-<body class="bg-white">
+<body class="bg-white w-full">
 <!-- Menu section-->
-<nav id="header" class="w-full z-10 top-0 shadow-md mx-0">
-	<div id="progress" class="top-0"></div>
-	<div class="w-full max-w-4xl mx-auto flex sm:flex-nowrap flex-wrap items-center justify-between mt-0 py-2">
-		<div class="pl-4">
-      			<a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold" href="./home.html">Oscar Ruenes Campos</a>
-		</div>
-		<div class="w-full flex-grow sm:flex sm:items-center flex-wrap sm:flex-nowrap sm:w-auto mt-2 sm:mt-0 bg-transparent z-20" id="nav-content">
-			<ul class="list-reset flex flex-wrap sm:justify-end flex-1 items-center">
-          		<li class="mr-3 text-sm">
-              			<a href="./CV.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4">CV</a>
+<nav id="header" class="w-full top-0 sticky shadow-md mx-0">
+	<div class="w-full max-w-4xl sm:w-full mx-auto flex flex-wrap flex-row items-center justify-between sm:justify-center py-2">
+		<a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold" href="./home.html">Oscar Ruenes Campos</a>
+			<ul class="list-reset flex flex-wrap flex-none justify-center items-center">
+          		<li class="mx-8 sm:mx-8 text-sm">
+              			<a href="./CV.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">CV</a>
            	 	</li>
-			<li class="mr-3 text-sm">
-				<a href="./projects.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4">Projects</a>
+			<li class="mx-8 sm:mx-8 text-sm">
+				<a href="./projects.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">Projects</a>
            		</li>
-			<li class="mr-3 text-sm">
-				<a href="./games.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4">Game Projects</a>
+			<li class="mx-8 sm:mx-8 text-sm">
+				<a href="./games.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">Game Projects</a>
 			</li>
-			<li class="mr-3 text-sm">
-				<a href="./hobbies.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4">Hobbies</a>
+			<li class="mx-8 sm:mx-8 text-sm">
+				<a href="./hobbies.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">Hobbies</a>
 			</li>
-			<li class="mr-3 text-sm">
-				<a href="./contactinfo.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4">Contact</a>
+			<li class="mx-8 sm:mx-8 text-sm">
+				<a href="./contactinfo.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">Contact</a>
 			</li>
 			</ul>
-		</div>
  	 </div>
 </nav>
 
-
 <!-- Website container -->
-<div class="flex flex-col items-start px-4 justify-start">
-	<div class="container px-8 flex flex-col justify-start mx-8">
-		<div class="flex md:flex-row flex-nowrap justify-start container mx-auto max-w-5xl py-10 px-3 flex-shrink-0">
+<div class="flex flex-col py-10 px-4 justify-start sm:justify-center sm:items-center mx-10 sm:mx-0">
+	<div class="container flex flex-col justify-start">
+		<div class="flex md:flex-row flex-nowrap justify-start container max-w-5xl flex-shrink-0">
 			<div id="header"class="container mx-auto">	
 				<h1 class="font-bold font-sans break-normal text-gray-900 text-3xl sm:text-5xl pb-4">Hobbies</h1>
 				<hr>
@@ -53,11 +47,11 @@
 			</div>
 		</div>
 <!-- Video Games -->
-		<div class="flex md:flex-row flex-nowrap justify-center container mx-auto max-w-5xl px-3 flex-shrink-0">
-			<div id="video-games"class="container mx-auto">	
+		<div class="flex flex-row flex-nowrap justify-center container max-w-5xl flex-shrink-0">
+			<div id="video-games"class="container">	
 				<h2 class="font-bold font-sans break-normal text-gray-900 text-2xl pb-4">Video Games</h2>
 				<hr>
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8">
+				<div class="container py-4 flex flex-row justify-start">
 					<div class="container mx-auto">
 <!--Currently Playing-->
 						<h3 class="font-bold font-sans break-normal text-gray-900 text-1xl pb-4">Currently Playing</h3>
@@ -72,7 +66,7 @@
 <!--Favorites-->
 				<h2 class="font-bold font-sans break-normal text-gray-900 text-2xl pb-4 flex justify-center">Favorites</h2>
 <!--Minecraft-->
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8">
+				<div class="container py-4 flex flex-row justify-start">
 					<div class="container mx-auto">
 						<h3 class="font-bold font-sans break-normal text-gray-900 text-1xl pb-4">Minecraft</h3>
 						<article class="prose prose-indigo">
@@ -84,7 +78,7 @@
 					</div>
 				</div>
 <!--Hollow Knight-->
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8">
+				<div class="container py-4 flex flex-row justify-start">
 					<div class="container mx-auto">
 						<h3 class="font-bold font-sans break-normal text-gray-900 text-1xl pb-4">Hollow Knight</h3>
 						<article class="prose prose-indigo">
@@ -96,7 +90,7 @@
 					</div>
 				</div>
 <!--League of Legends-->
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8">
+				<div class="container py-4 flex flex-row justify-start">
 					<div class="container mx-auto">
 						<h3 class="font-bold font-sans break-normal text-gray-900 text-1xl pb-4">League of Legends</h3>
 						<article class="prose prose-indigo">
@@ -108,7 +102,7 @@
 					</div>
 				</div>
 <!--The Binding of Isaac-->
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8">
+				<div class="container py-4 flex flex-row justify-start">
 					<div class="container mx-auto">
 						<h3 class="font-bold font-sans break-normal text-gray-900 text-1xl pb-4">The Binding of Isaac</h3>
 						<article class="prose prose-indigo">
@@ -120,7 +114,7 @@
 					</div>
 				</div>
 <!--Brawl Stars-->
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8">
+				<div class="container py-4 flex flex-row justify-start">
 					<div class="container mx-auto">
 						<h3 class="font-bold font-sans break-normal text-gray-900 text-1xl pb-4">Brawl Stars</h3>
 						<article class="prose prose-indigo">
@@ -132,7 +126,7 @@
 					</div>
 				</div>
 <!--Bloons Tower Defense 5-->
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8">
+				<div class="container py-4 flex flex-row justify-start">
 					<div class="container mx-auto">
 						<h3 class="font-bold font-sans break-normal text-gray-900 text-1xl pb-4">Bloons Tower Defense 5</h3>
 						<article class="prose prose-indigo">
@@ -144,7 +138,7 @@
 					</div>
 				</div>
 <!--Stardew Valley-->
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8">
+				<div class="container py-4 flex flex-row justify-start">
 					<div class="container mx-auto">
 						<h3 class="font-bold font-sans break-normal text-gray-900 text-1xl pb-4">Stardew Valley</h3>
 						<article class="prose prose-indigo">
@@ -156,7 +150,7 @@
 					</div>
 				</div>
 <!--Ghost of Tsushima-->
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8">
+				<div class="container py-4 flex flex-row justify-start">
 					<div class="container mx-auto">
 						<h3 class="font-bold font-sans break-normal text-gray-900 text-1xl pb-4">Ghost of Tsushima</h3>
 						<article class="prose prose-indigo">
@@ -175,7 +169,7 @@
 				<h2 class="font-bold font-sans break-normal text-gray-900 text-2xl pb-4">Movies/TV</h2>
 				<hr>
 <!--The Penguin-->
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8">
+				<div class="container py-4 flex flex-row justify-start">
 					<div class="container mx-auto flex justify-center items-center">
 						<!-- Aspect ratio container -->
    						 <div class="relative" style="width: 100%; padding-bottom: 56.25%;"> <!-- 16:9 Aspect Ratio -->
@@ -192,7 +186,7 @@
 <!--Favorites-->
 				<h2 class="font-bold font-sans break-normal text-gray-900 text-2xl pb-4 flex justify-center">Favorites</h2>
 <!--Puss and Boots: The Last Wish-->
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8">
+				<div class="container py-4 flex flex-row justify-start">
 					<div class="container mx-auto flex justify-center items-center">
 						<!-- Aspect ratio container -->
    						 <div class="relative" style="width: 100%; padding-bottom: 56.25%;"> <!-- 16:9 Aspect Ratio -->
@@ -207,7 +201,7 @@
 					</div>
 				</div>
 <!--Arcane-->
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8">
+				<div class="container py-4 flex flex-row justify-start">
 					<div class="container mx-auto flex justify-center items-center">
 						<!-- Aspect ratio container -->
    						 <div class="relative" style="width: 100%; padding-bottom: 56.25%;"> <!-- 16:9 Aspect Ratio -->
@@ -226,12 +220,12 @@
 						</article>
 					</div>
 				</div>
-				<div class="container px-8 flex flex-row justify-start mx-8">
+				<div class="container flex flex-row justify-start">
 					<img class=" float-left ml-3 mb-3" width="1000" height="200"src="https://merch.riotgames.com/_next/image/?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fdsfx7636%2Fconsumer_products%2Fc38c753cfd36f46236fdb5d509ffcb518e18d7cb-1280x1280.png&w=828&q=75" alt="Arcane Hoodie">
 				</div>
 
 <!--Breaking Bad-->
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8">
+				<div class="container py-4 flex flex-row justify-start">
 					<div class="container mx-auto flex justify-center items-center">
 						<!-- Aspect ratio container -->
    						 <div class="relative" style="width: 100%; padding-bottom: 56.25%;"> <!-- 16:9 Aspect Ratio -->
@@ -246,7 +240,7 @@
 					</div>
 				</div>
 <!--Attack on Titan-->
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8 min-h-100">
+				<div class="container py-4 flex flex-row justify-start min-h-100">
 					<div class="container mx-auto flex justify-center items-center">
 						<!-- Aspect ratio container -->
    						 <div class="relative" style="width: 100%; padding-bottom: 56.25%;"> <!-- 16:9 Aspect Ratio -->
@@ -261,7 +255,7 @@
 					</div>
 				</div>
 <!--Spider-man: Across the Spider-verse-->
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8 min-h-100">
+				<div class="container py-4 flex flex-row justify-start min-h-100">
 					<div class="container mx-auto flex justify-center items-center">
 						<!-- Aspect ratio container -->
    						 <div class="relative" style="width: 100%; padding-bottom: 56.25%;"> <!-- 16:9 Aspect Ratio -->
@@ -283,7 +277,7 @@
 			<div id="band"class="container mx-auto">
 				<h2 class="font-bold font-sans break-normal text-gray-900 text-2xl pb-4">Band</h2>
 				<hr>
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8">
+				<div class="container py-4 flex flex-row justify-start">
 					<div class="container mx-auto">
 						<article class="prose prose-indigo">
 							<p>I joined band in sixth grade as a percussionist.</p>	
@@ -303,7 +297,7 @@
 			<div id="book"class="container mx-auto">
 				<h2 class="font-bold font-sans break-normal text-gray-900 text-2xl pb-4">Books</h2>
 				<hr>
-				<div class="container py-4 px-8 flex flex-row justify-start mx-8">
+				<div class="container py-4 flex flex-row justify-start">
 					<div class="container mx-auto">
 						<article class="prose prose-indigo">
 							<p>I joined band in sixth grade as a percussionist.</p>	
@@ -315,13 +309,13 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 </div>		
 
 <footer class="bg-white">
-	<div class="flex bg-white text-gray-400 container max-w-4xl mx-auto my-8 px-4 justify-center">Made by&nbsp;<a href="./home.html" alt="Link to personal website">Oscar Ruenes Campos</a>. Created using a modified version of the&nbsp;<a class="underline" target="_blank" href="https://github.com/adfaure/kodama-theme">Kodama</a>&nbsp;academic template.
+	<div class="flex flex-wrap bg-white text-gray-400 container max-w-4xl mx-auto mb-8 px-4 justify-center">Made by&nbsp;<a href="./home.html" alt="Link to personal website">Oscar Ruenes Campos</a>. Created using a modified version of the&nbsp;<a class="underline" target="_blank" href="https://github.com/adfaure/kodama-theme">Kodama</a>&nbsp;academic template.
 	</div>
 </footer>	
+
 </body>
 </html>

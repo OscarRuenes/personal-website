@@ -10,42 +10,37 @@
 	<script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
 </head>
 
-<body class="bg-white">
+<body class="bg-white w-full">
 <!-- Menu section-->
-<nav id="header" class="w-full z-10 top-0 shadow-md mx-0">
-	<div id="progress" class="top-0"></div>
-	<div class="w-full max-w-4xl mx-auto flex sm:flex-nowrap flex-wrap items-center justify-between mt-0 py-2">
-		<div class="pl-4">
-      			<a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold" href="./home.html">Oscar Ruenes Campos</a>
-		</div>
-		<div class="w-full flex-grow sm:flex sm:items-center flex-wrap sm:flex-nowrap sm:w-auto mt-2 sm:mt-0 bg-transparent z-20" id="nav-content">
-			<ul class="list-reset flex flex-wrap sm:justify-end flex-1 items-center">
-          		<li class="mr-3 text-sm">
-              			<a href="./CV.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4">CV</a>
+<nav id="header" class="w-full top-0 sticky shadow-md mx-0">
+	<div class="w-full max-w-4xl sm:w-full mx-auto flex flex-wrap flex-row items-center justify-between sm:justify-center py-2">
+		<a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold" href="./home.html">Oscar Ruenes Campos</a>
+			<ul class="list-reset flex flex-wrap flex-none justify-center items-center">
+          		<li class="mx-8 sm:mx-8 text-sm">
+              			<a href="./CV.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">CV</a>
            	 	</li>
-			<li class="mr-3 text-sm">
-				<a href="./projects.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4">Projects</a>
+			<li class="mx-8 sm:mx-8 text-sm">
+				<a href="./projects.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">Projects</a>
            		</li>
-			<li class="mr-3 text-sm">
-				<a href="./games.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4">Game Projects</a>
+			<li class="mx-8 sm:mx-8 text-sm">
+				<a href="./games.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">Game Projects</a>
 			</li>
-			<li class="mr-3 text-sm">
-				<a href="./hobbies.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4">Hobbies</a>
+			<li class="mx-8 sm:mx-8 text-sm">
+				<a href="./hobbies.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">Hobbies</a>
 			</li>
-			<li class="mr-3 text-sm">
-				<a href="./contactinfo.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4">Contact</a>
+			<li class="mx-8 sm:mx-8 text-sm">
+				<a href="./contactinfo.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">Contact</a>
 			</li>
 			</ul>
-		</div>
  	 </div>
 </nav>
 
 <!-- Website container -->
+<div class="flex flex-col py-4 justify-start">
 <!-- Profile and Icon Section -->
-<div class="flex flex-row items-start px-4 justify-start">
-	<div class="container py-10 px-8 flex flex-row justify-start mx-8">
+	<div class="flex flex-row sm:flex-col items-start px-4 sm:px-2 justify-start">
 <!-- Profile Image Section (Stacked) -->
-		<div class="flex flex-col basis-13 mb-8 md:mb-0 flex-shrink-0">
+		<div class="flex flex-col basis-13 sm:basis-full mb-8 mb-0 flex-shrink-0">
 			<div class="container mx-auto">
 				<img class="object-center w-52 h-52 rounded-full mx-auto" src="./imgs/profile_picture.JPG" alt="Profile picture"/>
 				<h1 class="text-center font-bold break-normal text-gray-900 text-3xl py-1">Oscar Ruenes Campos</h1>
@@ -70,7 +65,7 @@
 			</div>
 		</div>
 <!-- About Me Section (2/3 of the page) -->
-		<div class="flex-grow px-10">
+		<div class="flex-grow px-10 sm:px-2 sm:basis-full">
 			<h1 class="font-bold font-sans break-normal text-gray-900 text-3xl sm:text-5xl pb-4">About me</h1>
 			<hr>
 			<article class="prose prose-indigo">
@@ -95,8 +90,8 @@ I made this website to compile some of my old projects and to motivate myself to
 
 
 			<!-- Cats -->
-			<div class="container py-2 flex flex-row justify-start items-center">
-				<div class="flex-grow flex items-center">
+			<div class="container py-2 flex flex-row sm:flex-col justify-start items-center">
+				<div class="flex-grow flex sm:flex-col items-center">
 					<img class="object-center res-54-1 mr-3 mb-3" src="./imgs/sandy.JPG" alt="Sandy(cat) picture"/>
   					<article class="prose prose-indigo text-center">
 						<p>These are my two cats Sandy and Ash :).</p>
@@ -104,7 +99,7 @@ I made this website to compile some of my old projects and to motivate myself to
 					<img class="object-center res-54-1 ml-3 mb-3" src="./imgs/ash.JPG" alt="Ash(cat) picture"/>
 				</div>
 			</div>
-			<div class="container flex flex-row justify-right">
+			<div class="container flex flex-row justify-right sm:justify-center">
 				<article class="prose prose-indigo text-gray-400">
 					<p>Last updated January 2, 2025.</p>
 				</article>
@@ -114,8 +109,9 @@ I made this website to compile some of my old projects and to motivate myself to
 </div>
 
 <footer class="bg-white">
-	<div class="flex bg-white text-gray-400 container max-w-4xl mx-auto mb-8 px-4 justify-center">Made by&nbsp;<a href="./home.html" alt="Link to personal website">Oscar Ruenes Campos</a>. Created using a modified version of the&nbsp;<a class="underline" target="_blank" href="https://github.com/adfaure/kodama-theme">Kodama</a>&nbsp;academic template.
+	<div class="flex flex-wrap bg-white text-gray-400 container max-w-4xl mx-auto mb-8 px-4 justify-center">Made by&nbsp;<a href="./home.html" alt="Link to personal website">Oscar Ruenes Campos</a>. Created using a modified version of the&nbsp;<a class="underline" target="_blank" href="https://github.com/adfaure/kodama-theme">Kodama</a>&nbsp;academic template.
 	</div>
 </footer>	
+
 </body>
 </html>

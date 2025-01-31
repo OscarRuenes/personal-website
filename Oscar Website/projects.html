@@ -9,43 +9,40 @@
 	<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
-<body class="bg-white">
+<body class="bg-white w-full">
 <!-- Menu section-->
-<nav id="header" class="w-full z-10 top-0 shadow-md mx-0">
-	<div id="progress" class="top-0"></div>
-	<div class="w-full max-w-4xl mx-auto flex sm:flex-nowrap flex-wrap items-center justify-between mt-0 py-2">
-		<div class="pl-4">
-      			<a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold" href="./home.html">Oscar Ruenes Campos</a>
-		</div>
-		<div class="w-full flex-grow sm:flex sm:items-center flex-wrap sm:flex-nowrap sm:w-auto mt-2 sm:mt-0 bg-transparent z-20" id="nav-content">
-			<ul class="list-reset flex flex-wrap sm:justify-end flex-1 items-center">
-          		<li class="mr-3 text-sm">
-              			<a href="./CV.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4">CV</a>
+<nav id="header" class="w-full top-0 sticky shadow-md mx-0">
+	<div class="w-full max-w-4xl sm:w-full mx-auto flex flex-wrap flex-row items-center justify-between sm:justify-center py-2">
+		<a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold" href="./home.html">Oscar Ruenes Campos</a>
+			<ul class="list-reset flex flex-wrap flex-none justify-center items-center">
+          		<li class="mx-8 sm:mx-8 text-sm">
+              			<a href="./CV.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">CV</a>
            	 	</li>
-			<li class="mr-3 text-sm">
-				<a href="./projects.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4">Projects</a>
+			<li class="mx-8 sm:mx-8 text-sm">
+				<a href="./projects.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">Projects</a>
            		</li>
-			<li class="mr-3 text-sm">
-				<a href="./games.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4">Game Projects</a>
+			<li class="mx-8 sm:mx-8 text-sm">
+				<a href="./games.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">Game Projects</a>
 			</li>
-			<li class="mr-3 text-sm">
-				<a href="./hobbies.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4">Hobbies</a>
+			<li class="mx-8 sm:mx-8 text-sm">
+				<a href="./hobbies.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">Hobbies</a>
 			</li>
-			<li class="mr-3 text-sm">
-				<a href="./contactinfo.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4">Contact</a>
+			<li class="mx-8 sm:mx-8 text-sm">
+				<a href="./contactinfo.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">Contact</a>
 			</li>
 			</ul>
-		</div>
  	 </div>
 </nav>
 
 <!-- Website container -->
-<div class="flex md:flex-row flex-wrap sm:flex-nowrap justify-center container mx-auto max-w-5xl py-10 px-3">
-	<div id="projects" class="basis-full flex flex-col">
-		<h1 class="font-bold font-sans break-normal text-gray-900 text-3xl sm:text-5xl pb-4">Projects</h1>
-		<article class="prose prose-indigo flex flex-row w-full mx-0 px-0">
-			<div class="skills experience-skills justify-center items-center w-full mx-0 px-0">
-				<h3>Experience</h3>
+<div class="flex flex-col py-10 px-4 justify-start sm:justify-center sm:items-center mx-10 sm:mx-0">
+	<h1 class="font-bold font-sans break-normal text-gray-900 text-3xl sm:text-5xl">Projects</h1>
+	<article class="prose prose-indigo my-3 flex justify-start">
+		<p>I've compiled some projects that I have created in both an academic and personal setting here. Some projects were also in collaboration with others while some I made by myself. I plan on adding more projects and am currently working on both maining this website and another project that I plan to announce here too!</p>
+	</article>
+	<div id="projects" class="w-full container flex flex-col sm:items-center">
+			<div id = "experience-skills"class="flex flex-col justify-center items-center mx-0 px-0 pb-4">
+				<h3 class = "font-bold font-sans break-normal text-gray-900">Experience</h3>
 				<ul>
 					<li class="grow">
 						<svg class="lang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path></svg>
@@ -174,16 +171,14 @@
 </svg>
 						<p>Jupyter</p>
 					</li>	
-
 				</ul>
 			</div>
-		</article>
 <p>I am currently working on how to compile some projects I have worked on, but for now here is a list of projects I am planning on showing:<br></p>
-		<article class="prose prose-indigo flex flex-row mx-0 px-0">
-			<p class = "flex justify-left w-60 mx-0 px-0">
+		<article class="project prose prose-indigo flex flex-row mx-0 px-0">
+			<p class = "flex justify-left mx-0 px-0">
 				This website!<br>
 			</p> 
-			<div class="skills justify-right mx-0 px-0">
+			<div class="skills justify-right mx-auto px-0">
 				<h3>Skills Used</h3>
 				<ul>
 					<li class="grow">
@@ -201,9 +196,9 @@
 				</ul>
 			</div>
 		</article>
-		<article class="prose prose-indigo flex flex-row mx-0 px-0">
-			<p class = "flex justify-left w-60 mx-0 px-0">
-				Foundational C# with Microsoft Certification<br>
+		<article class="project prose prose-indigo flex flex-row mx-0 px-0">
+			<p class = "flex justify-left mx-0 px-0">
+				Foundational C# with Microsoft Certification MEEEEEEEEEOW MEEEEEEEEEEOW MEEEEEEEEEOW MEEEEEEOW MEOE MWEO MWOE MWO MEWOW MEEM<br>
 			</p> 
 			<div class="skills justify-right mx-0 px-0">
 				<h3>Skills Used</h3>
@@ -219,8 +214,8 @@
 				</ul>	
 			</div>
 		</article>
-		<article class="prose prose-indigo flex flex-row mx-0 px-0">
-			<p class = "flex justify-left w-60 mx-0 px-0">
+		<article class="project prose prose-indigo flex flex-row mx-0 px-0">
+			<p class = "flex justify-left mx-0 px-0">
 				AIM, Amp1ify<br>
 			</p> 
 			<div class="skills justify-right mx-0 px-0">
@@ -340,8 +335,8 @@
 				</ul>
 			</div>
 		</article>
-		<article class="prose prose-indigo flex flex-row mx-0 px-0">
-			<p class = "flex justify-left w-60 mx-0 px-0">
+		<article class="project prose prose-indigo flex flex-row mx-0 px-0">
+			<p class = "flex justify-left mx-0 px-0">
 				Red-Black Tree Implementation in Java<br>
 			</p> 
 			<div class="skills justify-right mx-0 px-0">
@@ -354,8 +349,8 @@
 				</ul>
 			</div>
 		</article>
-		<article class="prose prose-indigo flex flex-row mx-0 px-0">
-			<p class = "flex justify-left w-60 mx-0 px-0">
+		<article class="project prose prose-indigo flex flex-row mx-0 px-0">
+			<p class = "flex justify-left mx-0 px-0">
 				Wordle in MIPS<br>
 			</p> 
 			<div class="skills justify-right mx-0 px-0">
@@ -376,8 +371,8 @@
 				</ul>
 			</div>
 		</article>
-		<article class="prose prose-indigo flex flex-row mx-0 px-0">
-			<p class = "flex justify-left w-60 mx-0 px-0">
+		<article class="project prose prose-indigo flex flex-row mx-0 px-0">
+			<p class = "flex justify-left mx-0 px-0">
 				Sever/Client C Program<br>
 			</p> 
 			<div class="skills justify-right mx-0 px-0">
@@ -394,8 +389,9 @@
 </div>	
 
 <footer class="bg-white">
-	<div class="flex bg-white text-gray-400 container max-w-4xl mx-auto my-8 px-4 justify-center">Made by&nbsp;<a href="./home.html" alt="Link to personal website">Oscar Ruenes Campos</a>. Created using a modified version of the&nbsp;<a class="underline" target="_blank" href="https://github.com/adfaure/kodama-theme">Kodama</a>&nbsp;academic template.
+	<div class="flex flex-wrap bg-white text-gray-400 container max-w-4xl mx-auto mb-8 px-4 justify-center">Made by&nbsp;<a href="./home.html" alt="Link to personal website">Oscar Ruenes Campos</a>. Created using a modified version of the&nbsp;<a class="underline" target="_blank" href="https://github.com/adfaure/kodama-theme">Kodama</a>&nbsp;academic template.
 	</div>
 </footer>	
+
 </body>
 </html>
