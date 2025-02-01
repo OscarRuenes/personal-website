@@ -128,3 +128,7 @@ button:hover {
 .text-AB {
 	color: AliceBlue;
 }
+
+.rounded{
+    border-radius: 0.375rem;
+  }
