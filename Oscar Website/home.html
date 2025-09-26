@@ -10,14 +10,14 @@
 	<script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
 </head>
 
-<body class="bg-white w-full">
+<body class="bg-blue-500 w-full">
 <!-- Menu section-->
-<nav id="header" class="w-full top-0 sticky shadow-md mx-0">
+<nav id="header" class="w-full top-0 sticky shadow-md mx-0 z-50">
 	<div class="w-full max-w-4xl sm:w-full mx-auto flex flex-wrap flex-row items-center justify-between sm:justify-center py-2">
 		<a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold" href="./home.html">Oscar Ruenes Campos</a>
 			<ul class="list-reset flex flex-wrap flex-none justify-center items-center">
           		<li class="mx-8 sm:mx-8 text-sm">
-              			<a href="./CV.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">CV</a>
+              			<a href="./construction.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">CV</a>
            	 	</li>
 			<li class="mx-8 sm:mx-8 text-sm">
 				<a href="./projects.html" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2">Projects</a>
@@ -36,20 +36,22 @@
 </nav>
 
 <!-- Website container -->
-<div class="flex flex-col py-4 justify-start">
+
 <!-- Profile and Icon Section -->
-	<div class="flex flex-row sm:flex-col items-start px-4 sm:px-2 justify-start">
+	<div class="flex flex-row sm:flex-col items-start mx-10 sm:mx-0 justify-start bg-white shadow-md">
+		
 <!-- Profile Image Section (Stacked) -->
-		<div class="flex flex-col basis-13 sm:basis-full mb-8 mb-0 flex-shrink-0">
-			<div class="container mx-auto">
+		<div class="flex flex-col basis-13 sm:basis-full mb-0 flex-shrink-0 bg-grey shadow-md">
+			<br><br><br>
+			<div class="container bg-grey">
 				<img class="object-center w-52 h-52 rounded-full mx-auto" src="./imgs/profile_picture.JPG" alt="Profile picture"/>
-				<h1 class="text-center font-bold break-normal text-gray-900 text-3xl py-1">Oscar Ruenes Campos</h1>
+				<h1 class="text-center font-bold break-normal text-white text-3xl py-1">Oscar Ruenes Campos</h1>
 			</div>
-			<div class="container mx-auto mt-4">
+			<div class="container bg-grey">
 				<img class="object-center w-52 h-52 rounded-full mx-auto" src="./imgs/favicon.png" alt="Oscar's Logo"/>
 			<!-- Social Links -->
 				<section class="social-section py-2 px-2">
-					<div class="links">
+					<div class="links text-white">
 						<a class="icon-link" href="https://www.instagram.com/oscar_ruenesc/" target="_blank">
 							<i data-feather="instagram"></i>
           					</a>
@@ -65,12 +67,12 @@
 			</div>
 		</div>
 <!-- About Me Section (2/3 of the page) -->
-		<div class="flex-grow px-10 sm:px-2 sm:basis-full">
+		<div class="flex-grow px-10 sm:px-2 pt-10 sm:basis-full">
 			<h1 class="font-bold font-sans break-normal text-gray-900 text-3xl sm:text-5xl pb-4">About me</h1>
 			<hr>
 			<article class="prose prose-indigo">
-				<p>Hey, my name is Oscar! I am currently a Senior student at <a href="https://www.utdallas.edu/" target=" blank">The University of Texas at Dallas</a> in the <a href="https://engineering.utdallas.edu/" target=" blank">Erik Jonsson School of Engineering and Computer Science</a> working towards my bachelor's degree in Computer Science as well as a certificate in Data Science. Academically, I am interested in researching Artificial Intelligence and Computer Vision and will start researching those topics in the Spring 2025 semester. My overarching goal for my professional career is to pursue software development to create reliable and robust software that others can depend on. <br><br>
-I made this website to compile some of my old projects and to motivate myself to create more. Feel free to check out some of my projects in the navigation bar at the top of the webpage!</p>
+				<p>Hey, my name is Oscar! I am currently a Senior student at <a href="https://www.utdallas.edu/" target=" blank">The University of Texas at Dallas</a> in the <a href="https://engineering.utdallas.edu/" target=" blank">Erik Jonsson School of Engineering and Computer Science</a> working towards my bachelor's degree in Computer Science as well as a certificate in Data Science. Academically, I am interested in researching Artificial Intelligence and Machine Learning and I have taken AI and am taking ML right now. My overarching goal for my professional career is to pursue software development to create reliable and robust software that others can depend on. <br><br>
+I made this website to compile some of my old projects and to motivate myself to create more cool things. Feel free to check out some of my projects in the navigation bar at the top of the webpage!</p>
 			</article>
 
 			<!-- Family Section -->
@@ -79,7 +81,7 @@ I made this website to compile some of my old projects and to motivate myself to
 					<div class="flex-grow w-full">
 						<img class="object-center w-100 h-70 float-right ml-3 mb-3" src="./imgs/familyphoto.JPG" alt="Family picture"/>
 						<article class="prose prose-indigo">
-							<p>My parents, Sergio Ruenes Monraz and Aide Campos, had me and my brother, Sergio Ruenes Campos, in Mexico. When I was just three years old, we moved to the United States in 2009 in pursuit of better education and jobs for me and Sergio. From my perspective, we succeeded in living good lives in the United States as we all made many great friends, had financial stability, and were successful in achieving many of our personal goals. With the help of some merit-based scholarships that me and my brother earned, my parents were able to put me and my brother through college. As a family, we mostly enjoy spending time together whilst playing a game of poker.</p>
+							<p>My parents had me and my brother, Sergio, in Mexico. When I was just three years old, we moved to the United States in 2009 in pursuit of better education and jobs for me and Sergio. From my perspective, we succeeded in living good lives in the United States as we all made many great friends, had financial stability, and were successful in achieving many of our personal goals. With the help of some merit-based scholarships that me and my brother earned, my parents have been able to put me and my brother through college. As a family, we mostly enjoy spending time together whilst playing a game of poker.</p>
 						</article>
 					</div>
 					<!--<div class="flex basis-23 flex-shrink-0 justify-center">
@@ -90,26 +92,26 @@ I made this website to compile some of my old projects and to motivate myself to
 
 
 			<!-- Cats -->
-			<div class="container py-2 flex flex-row sm:flex-col justify-start items-center">
-				<div class="flex-grow flex sm:flex-col items-center">
-					<img class="object-center res-54-1 mr-3 mb-3" src="./imgs/sandy.JPG" alt="Sandy(cat) picture"/>
+			<div class="container py-2 flex flex-grow flex-row sm:flex-col justify-center items-center">
+				<div class="flex flex-grow sm:flex-col items-center justify-center">
+					<img class="object-center w-half h-auto mr-3 mb-3 max-w-xl" src="./imgs/sandy.JPG" alt="Sandy(cat) picture"/>
   					<article class="prose prose-indigo text-center">
-						<p>These are my two cats Sandy and Ash :).</p>
+						<p>These are my two cats Sandy and Ash :-).</p>
 					</article>
-					<img class="object-center res-54-1 ml-3 mb-3" src="./imgs/ash.JPG" alt="Ash(cat) picture"/>
+					<img class="object-center w-half h-auto ml-3 mb-3 max-w-xl" src="./imgs/ash.JPG" alt="Ash(cat) picture"/>
 				</div>
 			</div>
 			<div class="container flex flex-row justify-right sm:justify-center">
 				<article class="prose prose-indigo text-gray-400">
-					<p>Last updated January 2, 2025.</p>
+					<p>Last updated August 27, 2025.</p>
 				</article>
 			</div>
 		</div>
 	</div>
-</div>
 
-<footer class="bg-white">
-	<div class="flex flex-wrap bg-white text-gray-400 container max-w-4xl mx-auto mb-8 px-4 justify-center">Made by&nbsp;<a href="./home.html" alt="Link to personal website">Oscar Ruenes Campos</a>. Created using a modified version of the&nbsp;<a class="underline" target="_blank" href="https://github.com/adfaure/kodama-theme">Kodama</a>&nbsp;academic template.
+
+<footer class="bg-blue-500">
+	<div class="flex flex-wrap bg-blue-500 text-gray-900 container max-w-4xl mx-auto mb-8 px-4 justify-center">Made by&nbsp;<a href="./home.html" alt="Link to personal website">Oscar Ruenes Campos</a>. Created using a modified version of the&nbsp;<a class="underline" target="_blank" href="https://github.com/adfaure/kodama-theme">Kodama</a>&nbsp;academic template.
 	</div>
 </footer>	
 

@@ -79,7 +79,7 @@ hr {
   /* 1 */
   color: inherit;
   /* 2 */
-  border-top-width: 1px;
+  border-top-width: 2px;
   /* 3 */
 }
 
@@ -389,13 +389,14 @@ menu {
 .icon-link {
 	text-decoration: none;
 	font-size: 48px auto;
+  -webkit-text-stroke-color: #ffffff;
 	padding-right: 13px;
 	padding-left: 13px;
 	padding-top: 4px;
 }
 
 i.feather {
-	stroke: #000000; /* Set the icon color */
+	stroke: #ffffff; /* Set the icon color */
 	stroke-width: 2; /* Optional: control the thickness of the stroke */
 	width: 30px;  /* Optional: Set size */
 	height: 30px; /* Optional: Set size */
@@ -1147,6 +1148,10 @@ video {
   position: sticky;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -1161,6 +1166,10 @@ video {
 
 .z-20 {
   z-index: 20;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .mx-0 {
@@ -1233,6 +1242,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-10 {
+  margin-top: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1293,6 +1306,9 @@ video {
 .w-6 {
   width: 1.5rem;
 }
+.w-33 {
+  width: 33%;
+}
 
 .w-full {
   width: 100%;
@@ -1312,6 +1328,14 @@ w-60 {
 
 .h-half {
   height: 50%;
+}
+
+.max-w-1xl {
+  max-width: 36rem;
+}
+
+.max-w-xl {
+  max-width: 16rem;
 }
 
 .max-w-3xl {
@@ -1478,6 +1502,11 @@ w-60 {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-grey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 20 20 / var(--tw-bg-opacity));
+}
+
 .bg-yellow-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(113 63 18 / var(--tw-bg-opacity));
@@ -1589,6 +1618,13 @@ w-60 {
   padding-bottom: 1rem;
 }
 
+.pb-25 {
+  padding-bottom: 25%;
+}
+.pb-56 {
+  padding-bottom: 56.25%;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1603,6 +1639,10 @@ w-60 {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .text-center {
@@ -1824,6 +1864,10 @@ w-60 {
     width: auto;
   }
 
+  .sm\:w-full {
+    width: 100%;
+  }
+
   .sm\:basis-12 {
     flex-basis: 50%;
   }
@@ -1896,6 +1940,10 @@ w-60 {
 }
 .sm\:h-35 {
   width: 16rem;
+}
+
+.sm\:pb-56 {
+  padding-bottom: 56.25%;
 }
 
 }
@@ -2049,7 +2097,7 @@ ul.icons li:last-child {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center; 
-    	width: 10%;
+    	width: 15%;
   	margin-left: auto; 
 	margin-right: 1rem;
 }
@@ -2158,7 +2206,7 @@ ul.icons li:last-child {
 	width: 96px;
 }
 .bg-blue-500{
-  background-color: #3b82f6; 
+  background-color: #617ca9; 
 }
 .text-white{
   color: white;
@@ -2166,3 +2214,17 @@ ul.icons li:last-child {
 .rounded{
   border-radius: 0.375rem;
 }
+
+table {
+      width: 50%;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
