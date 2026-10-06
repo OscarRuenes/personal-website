@@ -30,86 +30,139 @@
 
 <!-- Website container -->
 <div class="flex flex-col py-10 px-4 justify-start sm:justify-center sm:items-center mx-10 sm:mx-0">
-	<div class="w-full max-w-5xl">
-		<div class="flex flex-row sm:flex-col justify-between items-center">
-			<h1 class="font-bold font-sans break-normal text-gray-900 text-3xl">Curriculum Vitae</h1>
-			<a href="imgs/ORCResume.pdf" download="OscarRuenes_Resume.pdf"><button id="resume-btn" class="py-2 mx-2 bg-blue-500 text-white rounded">Download Resume</button></a>
-		</div>
-		<hr>
-		<br>
-		<h1 class="font-bold font-sans break-normal text-gray-900 text-3xl pb-2">Oscar Ruenes Campos</h1>
-		<p class="text-gray-500">Last updated April 2, 2026.</p>
+	<div class="w-full max-w-full cv-page">
+		<header class="cv-hero">
+			<div>
+				<p class="cv-eyebrow">CURRICULUM VITAE</p>
+				<h1>Oscar Ruenes Campos</h1>
+				<p class="cv-updated">Last updated October 6,  2026 (mostly styling, content update soon!)</p>
+			</div>
+			<a class="cv-resume-button" href="imgs/ORCResume.pdf" download="OscarRuenes_Resume.pdf">Download Resume</a>
+		</header>
+
+		<section class="cv-intro cv-panel">
+			<div>
+				<h2 class="cv-section-heading">Profile</h2>
+				<p>Computer Scientist with a Bachelor of Science in Computer Science from The University of Texas at Dallas and interests in artificial intelligence and machine learning. Focused on building reliable, intelligent software and user-facing tools.</p>
+			</div>
+			<div class="cv-contact">
+				<h2 class="cv-section-heading">Contact</h2>
+				<a href="mailto:oscarruenescampos@gmail.com">oscarruenescampos@gmail.com</a>
+			</div>
+		</section>
 
 		<section class="cv-section">
-			<h2 class="section-title">Summary</h2>
-			<article class="prose prose-indigo">
-				<p>Computer Scientist with a Bachelor of Science in Computer Science from The University of Texas at Dallas with interests in artificial intelligence and machine learning. Focused on building reliable, intelligent software and user-facing tools.</p>
+			<div class="cv-section-header">
+				<p class="cv-eyebrow">ACADEMIC BACKGROUND</p>
+				<h2 class="cv-section-heading">Education</h2>
+			</div>
+			<div class="cv-card-grid">
+				<article class="cv-panel cv-education-card">
+					<div class="cv-photo-slot">UT Austin photo</div>
+					<div class="cv-card-content">
+						<p class="cv-card-kicker">IN PROGRESS</p>
+						<h3>Master of Science in Artificial Intelligence Online</h3>
+						<p class="cv-institution">The University of Texas at Austin <span>Austin, Texas</span></p>
+						<p class="cv-date">Present</p>
+						<p><strong>Selected coursework</strong></p>
+						<p>Artificial Intelligence, Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Reinforcement Learning, and Ethics of AI.</p>
+					</div>
+				</article>
+				<article class="cv-panel cv-education-card">
+					<div class="cv-photo-slot">UT Dallas photo</div>
+					<div class="cv-card-content">
+						<p class="cv-card-kicker">AUGUST 2023 — DECEMBER 2025</p>
+						<h3>Bachelor of Science in Computer Science</h3>
+						<p class="cv-institution">The University of Texas at Dallas <span>Richardson, Texas</span></p>
+						<p>CS<sup>2</sup> Computer Science Honors Program · Artificial Intelligence Society</p>
+						<div class="cv-credential">
+							<div class="cv-photo-slot cv-photo-slot-small">Data Science certificate photo</div>
+							<div>
+								<p class="cv-card-kicker">CERTIFICATE · DECEMBER 2025</p>
+								<h4>Data Science</h4>
+								<p>The University of Texas at Dallas</p>
+							</div>
+						</div>
+						<p><strong>Selected coursework</strong></p>
+						<p>Software Engineering, Data Structures and Algorithms, Discrete Mathematics II, Systems Programming in UNIX and Other Environments, Computer Architecture, Artificial Intelligence, Machine Learning, Introduction to Statistical Learning, and Scientific Computing using Python.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="cv-section">
+			<div class="cv-section-header">
+				<p class="cv-eyebrow">WORK</p>
+				<h2 class="cv-section-heading">Experience</h2>
+			</div>
+			<article class="cv-panel cv-experience">
+				<div>
+					<p class="cv-card-kicker">AI CONTRACTOR</p>
+					<h3>Handshake</h3>
+				</div>
+				<p>Evaluates AI-generated videos and images across multiple dimensions, assesses entity and motion recognition in computer vision models, and improves AI-generated code through comparison, correctness validation, and prompt engineering.</p>
 			</article>
 		</section>
 
 		<section class="cv-section">
-			<h2 class="section-title">Contact</h2>
-			<article class="prose prose-indigo">
-				<p>
-				Email: <a href="mailto:oscarruenescampos@gmail.com" title="Email me">oscarruenescampos@gmail.com</a></p>
+			<div class="cv-section-header">
+				<p class="cv-eyebrow">SELECTED WORK</p>
+				<h2 class="cv-section-heading">Projects</h2>
+			</div>
+			<article class="cv-panel cv-project-card">
+				<div class="cv-photo-slot cv-project-photo">VibeMap project photo</div>
+				<div class="cv-card-content">
+					<p class="cv-card-kicker">MACHINE LEARNING · FULL STACK</p>
+					<h3>VibeMap — AI Playlist Curator</h3>
+					<p>Built a Spotify playlist clustering app with Spotify OAuth and Web API integration, Deezer preview audio retrieval, a Flask REST backend, and a vanilla JavaScript frontend.</p>
+					<p>Used PyTorch and Hugging Face CLAP embeddings, librosa audio preprocessing, and scikit-learn PCA/K-Means with silhouette scoring to group tracks and generate vibe-based playlists; deployed with a split Railway backend and Netlify frontend.</p>
+					<a class="cv-text-link" href="./projects.html">Explore projects <span aria-hidden="true">→</span></a>
+				</div>
+			</article>
+			<article class="cv-panel cv-compact-project">
+				<div>
+					<p class="cv-card-kicker">WEB DEVELOPMENT</p>
+					<h3>Personal Portfolio Website</h3>
+				</div>
+				<p>Responsive site to showcase projects and background.</p>
+				<a class="cv-text-link" href="./projects.html">View project <span aria-hidden="true">→</span></a>
 			</article>
 		</section>
 
-		<section class="cv-section">
-			<h2 class="section-title">Education</h2>
-			<article class="prose prose-indigo">
-				<p><strong>Master of Science in Artificial Intelligence Online</strong>, The University of Texas at Austin (Austin, Texas)<br>
-				Present<br></p>
-				<p><strong>Selected Coursework</strong>: Artificial Intelligence, Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Reinforcement Learning, Ethics of AI</p>
-				<p><strong>B.S. in Computer Science</strong>, The University of Texas at Dallas (Richardson, Texas)<br>
-				Aug 2023 - Dec 2025<br>
-				CS^2 (Computer Science Honors Program), AIS (Artificial Intelligence Society)</p>
-				<p><strong>Certificate in Data Science</strong>, The University of Texas at Dallas (Richardson, Texas)<br>
-				Jan 2024 - Present</p>
-				<p><strong>Selected Coursework</strong>: Software Engineering, Data Structures and Algorithms, Discrete Mathematics II, Systems Programming in UNIX and Other Environments, Computer Architecture, Artificial Intelligence, Machine Learning, Introduction to Statistial Learning, Scientific Computing using Python</p>
-			</article>
+		<section class="cv-section cv-bottom-grid">
+			<div>
+				<div class="cv-section-header">
+					<p class="cv-eyebrow">CREDENTIALS</p>
+					<h2 class="cv-section-heading">Certifications</h2>
+				</div>
+				<article class="cv-panel cv-detail-card">
+					<h3><a href="https://www.freecodecamp.org/certification/OscarRuenes/foundational-c-sharp-with-microsoft" target="_blank" rel="noopener noreferrer">Foundational C# with Microsoft</a></h3>
+					<p>freeCodeCamp · February 2024</p>
+				</article>
+			</div>
+			<div>
+				<div class="cv-section-header">
+					<p class="cv-eyebrow">TOOLKIT</p>
+					<h2 class="cv-section-heading">Technical Skills</h2>
+				</div>
+				<article class="cv-panel cv-detail-card">
+					<h3>Languages</h3>
+					<p>Python, Java, C++, C#, JavaScript, HTML, CSS, MIPS</p>
+					<h3>Frameworks &amp; tools</h3>
+					<p>Flask, .NET, PyTorch, Git</p>
+				</article>
+			</div>
 		</section>
 
 		<section class="cv-section">
-			<h2 class="section-title">Experience</h2>
-			<article class="prose prose-indigo">
-				<p><strong>AI Contractor</strong>, Handshake<br>
-				Evaluation of AI models production of videos and images across various axes and dimensions, entity/motion recognition in computer vision models, and improvement of AI generated code through code comparison, correctness validation, and prompt engineering to fit the adjusted solution.</p>
-
-			</article>
-		</section>
-
-		<section class="cv-section">
-			<h2 class="section-title">Certifications</h2>
-			<article class="prose prose-indigo">
-				<p>Undergraduate Certificate in Data Science, The University of Texas at Dallas (December 2025)</p>
-			</article>
-			<article class="prose prose-indigo">
-				<p><a href="https://www.freecodecamp.org/certification/OscarRuenes/foundational-c-sharp-with-microsoft" target="_blank" title="View Certificate">Foundational C# with Microsoft</a>, freeCodeCamp (Feb 2024)</p>
-			</article>
-		</section>
-
-		<section class="cv-section">
-			<h2 class="section-title">Technical Skills</h2>
-			<article class="prose prose-indigo">
-				<p>Languages: Python, Java, C++, C#, JavaScript, HTML, CSS, MIPS<br>
-				Frameworks/Tools: Flask, .NET, PyTorch, Git</p>
-			</article>
-		</section>
-
-		<section class="cv-section">
-			<h2 class="section-title">Selected Projects</h2>
-			<article class="prose prose-indigo">
-				<p><a href="./projects.html">VibeMap - AI Playlist Curator</a> - Built a Spotify playlist clustering app with Spotify OAuth/Web API integration, Deezer preview audio retrieval, a Flask REST backend, and a vanilla JavaScript frontend.<br>
-				Used PyTorch + Hugging Face CLAP embeddings, librosa audio preprocessing, and scikit-learn PCA/K-Means with silhouette scoring to group tracks and generate vibe-based playlists; deployed with a split Railway backend and Netlify frontend.<br>
-				<a href="./projects.html">Personal Portfolio Website</a> - Responsive site to showcase projects and background.</p>
-			</article>
-		</section>
-
-		<section class="cv-section">
-			<h2 class="section-title">Activities</h2>
-			<article class="prose prose-indigo">
-				<p>AIS, SHPE, CS^2 Honors Program</p>
+			<div class="cv-section-header">
+				<p class="cv-eyebrow">COMMUNITY</p>
+				<h2 class="cv-section-heading">Activities</h2>
+			</div>
+			<article class="cv-panel cv-activities">
+				<span>AIS</span>
+				<span>SHPE</span>
+				<span>CS<sup>2</sup> Honors Program</span>
 			</article>
 		</section>
 	</div>
