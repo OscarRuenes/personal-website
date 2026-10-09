@@ -477,6 +477,11 @@ i.feather {
   font-weight: 600;
 }
 
+.gallery-feature {
+  border-color: #c7d2fe;
+  background: linear-gradient(135deg, #ffffff 55%, #eef2ff);
+}
+
 .cv-section {
   margin-top: 2rem;
 }
@@ -728,8 +733,10 @@ i.feather {
 }
 
 .cv-photo.cv-project-photo {
+  background: #f3f4f6;
   height: 100%;
   min-height: 15rem;
+  object-fit: contain;
 }
 
 .cv-text-link {
